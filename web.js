@@ -63,7 +63,7 @@ io.on("connection", (socket) => {
 });
 
 /* 서버 실행 */
-const PORT = 8001;
+const PORT = 80;
 
 server.listen(PORT, () => {
   console.log(`server running on ${PORT}`);
