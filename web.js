@@ -65,6 +65,6 @@ io.on("connection", (socket) => {
 /* 서버 실행 */
 const PORT = 8001;
 
-server.listen(PORT, () => {
+server.listen(PORT, '0,0,0,0', () => {
   console.log(`server running on ${PORT}`);
 });
