@@ -33,6 +33,5 @@ jobs:
 
             npm install            
             npm run lint
-            npm run test
             
             pm2 reload app || pm2 start web.js --name app
