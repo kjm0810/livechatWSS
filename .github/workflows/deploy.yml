@@ -5,7 +5,14 @@ on:
     branches: [ "main" ]
 
 jobs:
+  ci: 
+    - uses: actions/checkout@v3
+    - run: npm install
+    - run: npm run lint
+    - run: npm run test
+
   deploy:
+    needs: ci
     runs-on: ubuntu-latest
 
     steps:
