@@ -14,7 +14,6 @@ const io = new Server(server, {
   },
 });
 
-function getTime() {
   return new Date().toLocaleTimeString("ko-KR", {
     hour: "2-digit",
     minute: "2-digit",
